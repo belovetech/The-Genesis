@@ -1,0 +1,660 @@
+/*
+#00aeff
+#cfedfb
+#e1e2e3
+#1d5874
+#000000
+#ffffff
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: normal 1.1em/1.5em sans-serif;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+
+/* Layout Element Colors
+===============================*/
+.main-header {background-color: #00aeff;}
+  
+
+
+
+
+/* Header, Banners and Footers
+===============================*/
+.main-nav,
+.main-logo,
+.main-nav li {
+    display: inline-block;
+}
+
+.main-header {
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 101;
+   
+}
+
+.main-nav {
+    text-align: center;
+    float: right;
+ }
+ 
+ .main-logo{
+     margin-top: 0;
+     margin-bottom: 0;
+     margin-left: 35px;
+     font: normal  montserrat;
+     color: white;
+    }
+ 
+
+.main-logo a,
+.main-nav a {
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+.main-nav li  {
+    margin-right: 20px;
+    border-right: 1px solid white;
+    margin-bottom: 20px;
+}
+
+
+.main-nav li:last-child {
+    border: none;
+}
+
+.main-nav a {
+    padding-right: 10px;
+   
+}
+
+.img {
+    max-width: 100%;
+    height: auto;    
+}
+
+.drpbtn {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font: normal .8em 'times new roman';
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+/*dropdown-contact
+==========================*/
+.whatsapp-icon a,
+.call-icon a{
+    color: black;
+    padding: 10px 0;
+    
+}
+.whatsapp-icon a::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("../image/whatsapp-icon-new.png") no-repeat 0 0;
+    background-size: 20px 20px;
+    background-position: center;
+    display: inline-block;
+    margin: 0 8px -6px 0;
+}
+.call-icon a::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url("../image/call1.png") no-repeat ;
+    background-size: 30px 30px;
+    background-position: center;
+    display: inline-block;
+    margin: -10px 8px -10px 0;   
+}
+.dropdown-contact-content{
+    display: none;
+    background-color: white;
+    width: 180px;
+    -webkit-border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    z-index: 101;
+    color: black;
+    text-align: center;
+    font: small 'montserrat';
+    margin-top: 6px;
+    transition: .5s;
+    -webkit-transition: .5s;  
+}
+.dropdown-contact-content:hover {
+    background: #eee;
+}
+.dropdown-contact,
+.dropdown-currency,
+.dropdown-login-form {
+    display: inline-block;
+    position: relative;
+    padding: 10px;   
+}
+
+.dropdown-contact-content::after,
+.dropdown-currency-content::after,
+.dropdown-login-content::after {
+    content: "";
+    position: absolute;
+    border: 10px solid;
+    bottom: 100%;
+    right: 10px;
+    border-color:  transparent   transparent white transparent;
+}
+
+.dropdown-contact:hover .dropdown-contact-content,
+.dropdown-currency:hover .dropdown-currency-content,
+.dropdown-login-form:hover .dropdown-login-content {
+    display: block;
+}
+
+
+/*Dropdown login content
+=============================*/
+.dropdown-login-content {
+    display: none;
+    background-color: white;
+    width: 220%;
+    -webkit-border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    z-index: 101;
+    color: black;
+    text-align: center;
+    font: small 'montserrat';
+    margin-top: 6px;
+    transition: .5s;
+    -webkit-transition: .5s;  
+}
+.dropdown-login-content{
+    padding: 10px;
+    font-size: 12px;
+}
+.dropdown-login-content a {
+    color: black;   
+}
+.sign-up {
+    margin-top: -15px;
+    margin-left: 25px;
+}
+.dropdown-login-content p {
+    text-align: left;
+}
+.sign-in {
+    background: #00aeff;
+    color: #fff;
+    padding: 10px;
+    -webkit-border-radius: 4px;
+}
+.dropdown-login-content {
+    width: 200px;
+}
+
+
+/*dropdown currency
+=================================*/
+.dropdown-currency-content {
+    display: none;
+    background-color: white;
+    width: 200px;
+   -webkit-border-radius: 5px;
+   position: absolute;
+    right: 10px;
+    z-index: 101;
+    color: black;
+    text-align: left;
+    font: small 'montserrat';
+    margin-top: 6px;
+    transition: .5s;
+    -webkit-transition: .5s;   
+}
+.dropdown-currency-content p {
+    padding-left: 10px;
+}
+.dropdown-currency-content a {
+color: black;
+display: block;
+padding: 8px 0;
+padding-left: 10px;
+text-align: left;
+}
+.dropdown-currency-content .active {
+    background-color: #00aeff;
+    color: white;
+}
+.dropdown-currency-content a:hover:not(.active) {
+    background: #eee;
+}
+
+/* Section
+====================================*/
+.section-bg {
+    background: url('../image/3192.jpg') no-repeat center;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.section-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.section-text h1 {
+    color: white;
+    font-size: 1.5em;
+}
+.section-text p {
+    color: white;
+    font-size: 1em;
+    margin: -10px 0 0 0;
+}
+
+/* search box
+====================================*/
+.search-box {
+    position: relative;
+    bottom: 50px;
+    left: 0%;
+    width: 70%;
+    padding: 30px;
+    margin: 0 auto;
+    background: white;
+    overflow: hidden;
+    z-index: 5;
+    box-shadow: 0 1px 10px  rgba(0,0,0,.2),
+                 0 1px 15px rgba(0,0,0,.19);
+}
+.search-box.find-hotels {
+    position: absolute;
+}
+input {
+    font: normal 15px sans;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #aaa;
+    -webkit-border-radius: 4px;
+    color: black;
+   
+}
+input[type=search] {
+    width: 35%;
+    background-image: url('../icon/135-search.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 10px 10px;
+}
+input[type=text] {
+    width: 25%;
+    background-image: url('../icon/084-calendar.png');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: 10px 10px;
+}
+.submit {
+    width: 10%;
+    background: #00aeff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: .90em;
+    text-align: center;   
+}
+
+/* suggested destination
+====================================*/
+.suggested-dest,
+.top-deals-heading,
+.gallery-heading{
+    color: rgba(0,0,0,.8);
+    width: 70%;
+    margin: 70px auto;
+    text-align: center;
+    box-sizing: border-box;
+  
+}
+
+.suggested-dest-heading,
+.top-deals-heading,
+.gallery-heading{
+    margin-bottom: 70px; 
+}
+
+.suggested-dest-heading span,
+.top-deals-heading span {
+    padding-bottom: 15px;
+    border-bottom: 3px solid #00aeff;
+}
+
+.suggested-dest-heading h3,
+.gallery-heading h3 {
+    color: rgba(0,0,0,.8);
+    margin-bottom: -10px;
+}
+.suggested-dest-heading p,
+.gallery-heading p{
+    color: rgba(0,0,0,.8);
+    font-size: 16px;   
+}
+
+.flex-container {
+    width: 80%;
+    margin: auto;
+}
+.suggested-dest-content {
+    padding: 2px;
+    float: left;
+    width: 15%;
+    height: 80px;
+    margin-right: 8px;
+    -webkit-border-radius: 4px;
+    border: 2px solid #00aeff;
+    box-sizing: border-box;
+    -webkit-transition: .6s ease-in .0s;
+}
+
+.suggested-dest-content h3 a{
+    color: #00aeff;
+    font-size: 16px;
+    
+}
+.suggested-dest-content h3,
+.suggested-dest-content p {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.suggested-dest-content p a {
+color: black;
+font-size: 14px;
+
+}
+
+.suggested-dest-content:hover  {
+    background: #00aeff;
+    color: #fff;
+}
+
+.suggested-dest-content:hover a {
+    color: white;
+}
+
+/*Top deals imagery
+====================================*/
+.top-deals {
+    padding-top: 5px;
+    clear: both;
+}
+.responsive {
+    color: rgba(0,0,0,.8);
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+    box-sizing: border-box;
+   
+}
+div .top-deals-image {
+    width: 32.33%;
+    -webkit-border-radius: 0 0 4px 4px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.3);
+    margin: 10px 5px;
+    float: left;
+}
+
+
+div .img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+div .img:last-child {
+    margin-bottom: 30px;
+}
+
+div .img-desc {
+    text-align: left;
+    margin-top: -15px;
+    padding: 0 10px;
+}
+div .img-desc h3 a {
+    color: #00aeff;
+    font-size: 16px;
+    margin-top: -20px;
+    margin-bottom: 0;
+}
+
+div .img-desc p {
+    margin-top: -20px;
+}
+
+div .img-desc p a {
+color: black;
+font-size: 14px;
+}
+
+
+/*Gallery
+====================================*/
+#gallery {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+.gallery-heading {
+    position: relative;
+    top: 30px;
+    margin-top: 20px;
+}
+ img{
+    width: 100%;
+    border-radius: 4px;
+
+}
+a {
+color: white;
+}
+
+#gallery li {
+    float: left;
+    width: 30%;
+    margin: 1%
+}
+.gallery-image {
+  position: relative;
+}
+
+.gallery-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1001;
+    transform: translate(-50%, -50%);
+}
+.gallery-text p {
+    font: normal 1.1em open-sans;
+}
+
+/* Special hotel deals
+====================================*/
+.special-hotel-deals {
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: rgba(0,0,0,.6);
+}
+.email {
+    width: 50%;
+    margin-right: 5px;
+}
+.subscribe {
+    text-align: center;
+    padding: .5em 1em;
+    width: 20%;
+    background: #00aeff;
+    border: none;
+    color: white;
+    font-size: 1em;
+} 
+
+
+
+/* Footer
+====================================*/
+footer {
+    background: #0f508c;
+    text-align: center;
+    padding: 10px;
+
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer>ul>li{
+    margin: 10px 0;
+    display: block;
+}
+
+footer p {
+    font-size: .80em;
+}
+
+
+/* Clearfix
+====================================*/
+.group::after,
+.group::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media Qauries
+====================================*/
+@media screen and (max-width: 768px) {
+.main-logo {
+    margin: 10px;
+    padding: initial;
+}
+.dropdown-contact{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    border: none;
+}
+.dropdown-currency,
+.dropdown-login-form {
+    display: none;
+}
+
+.section-text p{
+    font-size: .70em;
+}
+.section-text h1 {
+    font-size: .90em;
+}
+.search-box {
+    margin: 0 auto;
+    box-shadow: none;
+    width: 90%;
+    bottom: 24%;
+    position: absolute;
+}
+.check-in, .check-out {
+    display: none;
+}
+
+.search, .submit{
+    float: left;
+}
+input[type=search] {
+   width: 68%;
+   margin-right: 2%;
+}
+.submit {
+    width: 30%;
+}
+
+.suggested-dest {
+    text-align: center;
+}
+
+.suggested-dest-content {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.top-deals p {
+    font-size: .80em;
+}
+.top-deals p span {
+ border: none;
+}
+.top-deals {
+    margin: 0 auto;
+}
+
+div .top-deals-image{
+    width: 100%;
+    height: auto;
+} 
+#gallery {
+    min-width: 120%;
+    margin: auto;
+}
+#gallery li {
+    float: left;
+    width: 40%;
+    margin: 1%
+}
+
+.gallery-heading h3, p {
+    font-size: 1em;
+    display: block;
+   
+}
+.gallery-heading p,
+.gallery-heading  p span{
+ border: none;
+   font-size: .87em;
+}
+#special-hotel-deals  {
+    width: 100%;
+    margin: 0;
+}
+.email {
+    width: 60%;
+    margin-right: 5px;
+}
+.subscribe {
+    width: 30%;
+    margin-bottom: 10px;
+} 
+}

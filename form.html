@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style type="text/css">
+.wrapper {
+       width: 300px;
+       margin: 50px auto;
+       text-align: center;
+}
+
+
+.hotel-logo {
+color: #00aeff;
+font: bold 45px montserrat;
+margin-bottom: -12px;
+padding: 10px;
+box-sizing: border-box;  
+}
+
+span {
+display: block;
+padding-top: 10px;
+padding-bottom: 40px;
+}
+
+
+
+input {
+width: 100%;
+margin: 8px 0;
+padding: 10px;
+border-radius: 3px;
+border: 1px solid #ddd;
+
+}
+
+input:focus {
+border: #00aeff;
+}
+
+input[type=submit] {
+background: #00aeff;
+color: #000; 
+text-align: center;
+width: 108%;
+
+}
+
+a {
+color: red;
+text-decoration: none;
+}
+
+a, p {
+font-size: 14px;
+}
+
+p {
+border-bottom: 1px solid #ddd;
+padding-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <div  class="wrapper">
+    <form action="">
+        <h1 class="hotel-logo">hotels.ng</h1>
+        <span>SIGN IN TO CONTINUE</span>
+        <input type="mail" placeholder="Email address" name="email"> <br />
+        <input type="password" placeholder="Password" name="password"> <br />
+        <input type="submit" value="Sign in" name="sign-in">
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+        <a href="#">Forget password?</a>
+    </form>
+</div>
+</body>
+</html>
