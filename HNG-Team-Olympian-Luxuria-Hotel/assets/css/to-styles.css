@@ -1,0 +1,178 @@
+/*The whole body style attribute*/
+body{
+    position: relative;
+    width: 100%;
+    height: 2400px;
+    background-color: #ffffff; 
+}
+
+/*Header for Nav and Logo*/
+.to-header{
+    width: 100%;
+    height: 300px;
+}
+
+/*Logo inside the header*/
+.to-one1{
+    position: absolute;
+    top: -30px;
+    left: 33px;
+}
+
+/*Body aside the header and footer*/
+.to-body{
+    text-align: justify;
+}
+
+/*Covid-19 header*/
+h1{
+    position: absolute;
+    width: 258px;
+    height: 70px;
+    left: 123px;
+    top: 412px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.03em;
+    color: #0B0D23;
+}
+
+/*Paragraph detailing the Covid-19 message*/
+.to-one{
+   position: absolute;
+   width: 580px;
+   height: 572px;
+   left: 123px;
+   top: 541px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 22px;
+   line-height: 44px;
+   /* or 44px */
+   color: #0B0D23;
+}
+
+/*Second Logo by the side of Covid-19 message*/
+.to-two2{
+   position: absolute;
+   width: 631px;
+   height: 631px;
+   left: 727px;
+   top: 500px;
+}
+
+/*FAQ 1*/
+.to-two12{
+   position: absolute;
+   width: 650px;
+   height: 50px;
+   left: 123px;
+   top: 1374px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 25px;
+   line-height: 200%;
+/* identical to box height, or 50px */
+   color: #0B0D23;
+}
+
+/*FAQ 2*/
+.to-three13{
+   position: absolute;
+   width: 500px;
+   height: 48px;
+   left: 123px;
+   top: 1431px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 25px;
+   line-height: 200%;
+/* or 50px */
+   color: #0B0D23;
+}
+
+/*FAQ 3*/
+.to-four14{
+   position: absolute;
+   width: 500px;
+   height: 50px;
+   left: 123px;
+   top: 1486px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 25px;
+   line-height: 200%;
+/* identical to box height, or 50px */
+   color: #0B0D23;
+}
+
+/*FAQ-4*/
+.to-five15{
+   position: absolute;
+   width: 468px;
+   height: 50px;
+   left: 123px;
+   top: 1543px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 25px;
+   line-height: 200%;
+/* identical to box height, or 50px */
+   color: #0B0D23;
+}
+
+/*Arrow Css*/
+.to-arrow {
+   position: absolute;
+   left: 800px;
+   top: 25px;
+   border: solid black;
+   border-width: 0 3px 3px 0;
+   display: inline-block;
+   padding: 3px;
+   width: 14px;
+   height: 14px;
+   cursor: pointer;
+}
+
+/*Arrow Css*/
+.right {
+   transform: rotate(-45deg);
+}
+
+/*  Search field */
+.to-example input[type=text] {
+   position:absolute;
+   padding: 10px;
+   font-size: 17px;
+   color: black;
+   border-style: hidden;
+   border-bottom: solid;
+   left: 95px;
+   top: 1770px;
+   background: #fff;
+   width: 330px;
+}
+
+/* Search Icon*/
+.to-example button {
+   position:absolute;
+   left: 390px;
+   top: 1784px;
+   width: 2%;
+   padding: 10px;
+   background: #2196F3;
+   color: white;
+   font-size: 17px;
+   border: 1px solid grey;
+   border-left: none; /* Prevent double borders */
+   cursor: pointer;
+}

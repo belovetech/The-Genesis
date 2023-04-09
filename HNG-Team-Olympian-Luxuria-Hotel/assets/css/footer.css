@@ -1,0 +1,128 @@
+#footer 
+{ 
+    
+    height: 204px;
+    display: flex;
+   
+   
+   padding-left: 65px;
+    padding-right: 65px;
+    text-align: center;
+    justify-content:space-around;
+    
+
+}
+footer
+{
+     width: 1022px;
+}
+
+.footer
+{
+   
+   justify-content: space-between;
+    text-align: left;
+  
+}
+
+#footer #top
+
+{
+    display: flex;
+    text-align:left;
+    border-top: 2px solid black;
+    justify-content: space-between;
+    
+}
+
+#footer ul
+{
+    list-style-type: none;
+    text-align: left;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+#footer l1{
+    font-size: 22px;
+    line-height: 130%;
+    
+}
+#footer h3
+{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size:35px;
+    line-height: 80%;
+    padding-left: 0px;
+   
+}
+
+#footer .list
+{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 130%;
+
+    display: flex;
+    align-items: center;
+
+    color: #0B0D23;
+
+}
+
+#footer #lf 
+{
+    border-top: 1px #333 solid;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+#footer .footer #logo {
+    
+ box-sizing: border-box;
+    width: 140px;
+    height: 120px;
+}
+
+#footer #logo img
+{
+    height: 150px;
+    width: 180px;
+    padding-left: 20px;
+}
+#footer #others
+{
+   display: flex; 
+}
+#footer #others .icons
+{
+    
+    width: 20px;
+    height:20px;
+    padding-left: 10px;
+    padding-top: 0px;
+}
+#footer #mom
+{
+      width: 140px;
+    height: 60px;
+  padding-top: 0px;
+    padding-left: 40px;
+    
+}
+#footer #mom p
+{
+    padding: 0px;
+    margin: 0px;
+    padding-left:10px;
+}
