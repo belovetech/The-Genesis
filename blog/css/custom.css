@@ -1,0 +1,25 @@
+.sidenav {
+  background-color: #ccc;
+  padding: 10px;
+  height: 100%;
+}
+.row.content {
+  height: 1500px;
+}
+footer {
+  background-color: #ccc;
+  padding: 10px;
+  margin: 0;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width:768px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+
+  .row.content {
+    height: auto;
+  }
+  
+}

@@ -1,0 +1,153 @@
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font: 13px/1.5 'Manrope', sans-serif;
+}
+
+div.container {
+    position: relative;
+    width: 80%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px 3px  hsla(217, 19%, 35%, .3);
+}
+.bg-img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10px 0 0 10px;
+}
+.text-section {
+    margin: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.comment-img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.share-section {
+    position: relative;
+    bottom: -10px;
+}
+.share-section p {
+    margin-bottom: -5px;
+}
+.foot-sec {
+    display: inline-block;
+
+}
+.tooltips .share-icon {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    bottom: 0px;
+    padding: 10px;
+    color: #fff;
+}
+.tooltips .tooltip-content {
+    width: 150px;
+    background-color:  hsl(217, 19%, 35%);
+    color: #fff;
+    text-align: center;
+    padding: 5px 8px;
+    position: absolute;
+    left: 50%;
+    bottom: 75%;
+    margin-left: 25%;
+    border-radius: 6px;
+    z-index: 2;
+    visibility: hidden;
+}
+/* Tooltip arrow */
+.tooltips .tooltip-content::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+.share-icon-state {
+    background-color: hsl(212, 23%, 69%);
+    border-radius: 50%;
+    color: white;
+}
+.tooltip-content .share {
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    letter-spacing: 3px;
+    display: inline-block;
+    padding-left: 7px;
+}
+.tooltip-content .icon {
+   margin-left: 50px;
+}
+.icon img {
+    padding: 3px;
+}
+small {
+    color: hsl(212, 23%, 69%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Media queries */
+@media screen and  (max-width: 900px) {
+    body {
+        padding: 40px 20px;
+    }
+    div.container {
+        display: initial;
+    }
+    .text-section {
+        margin: initial;
+        padding: 20px 20px 40px 20px;
+        background-color: white;
+        border-radius: 0 0 10px 10px;
+
+    }
+    .bg-img {
+        border-radius: initial;
+        border-radius: 10px 10px 0 0;
+    }
+    .tooltips .tooltip-content {
+        width: 100%;
+        bottom: -30px;
+        left: 0;
+        margin-left: -20px;
+        border-radius: 0;
+        padding: 0 20px 0 20px;
+        border-radius: 0 0 10px 10px;
+        height: 80px;
+    }
+    .tooltips .tooltip-content::after {
+        border-color: transparent transparent transparent transparent;
+    }
+    .tooltip-content .share,
+    .tooltip-content .icon {
+        margin-top: 20px;
+    }
+    .tooltip-content .share {
+        left: 20px;
+    }
+    .tooltip-content .icon img {
+        padding-left: 20px;
+        margin-left: -100px;
+    }
+    .share-icon {
+        z-index: 100;
+    }
+    .attribution {
+        margin-top: 25px;
+    }
+}

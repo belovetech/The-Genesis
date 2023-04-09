@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To DO List</title>
+        <!-- React link, React-Dom link and Babel link -->
+        <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"></div>
+
+    <script type="text/babel">
+
+    const TodoItems = React.createClass({
+
+        render: function() {
+
+            let todoEntries = this.props.entries;
+
+            function createTask(item) {
+                // Capitalize the first letter of the item Text
+                let splitItem, firstLetter, itemText;
+
+                // Convert the string to Array
+                splitItem = item.text.split("");
+
+                // Select and Capitalize the First Letter in Item
+                firstLetter = splitItem[0].toUpperCase();
+
+                // Delete the first Letter and replace it with capitalized one
+                splitItem.splice(0, 1, firstLetter)
+
+                // Join the array to string
+                itemText = splitItem.join("");
+
+                return <li key={item.key}>{itemText}</li>
+            }
+
+            let listItems = todoEntries.map(createTask);
+
+
+            return (
+                <ul className="theList">
+                    {listItems}
+                </ul>
+            )
+        }
+
+
+    });
+
+
+    const TodoList = React.createClass({
+
+        getInitialState: function() {
+
+            return {
+                items: [],
+            };
+        },
+
+        addItem: function(e) {
+            var itemArray = this.state.items;
+
+            if (itemArray) {
+                
+                    itemArray.push(
+                    {
+                        text: this._inputElement.value,
+                        key: Date.now()
+                    }
+                );
+                
+                
+                this.setState({items: itemArray});
+
+                this._inputElement.value = ""
+                
+                e.preventDefault();
+            } 
+
+        },
+
+     
+        render: function()  {
+
+            return (
+                <div className="todoListMain" >     
+                   <div className="header">
+                    <h1 className="title">TO-DO LIST</h1>
+                        <form onSubmit={this.addItem}>
+                            <input ref={(el) => this._inputElement = el}
+                            placeholder="Enter task"/>
+                            <button type="submit" >add</button>
+                        </form>
+                   </div>
+                   <TodoItems entries={this.state.items} />
+                </div>
+            );
+        }
+    });
+
+    const destination = document.querySelector("#container");
+
+    ReactDOM.render( <div> <TodoList /> </div>, destination );
+
+    </script>
+</body>
+</html>

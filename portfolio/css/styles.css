@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    color: #40514E;
+}
+
+h1 { 
+    color: #66BFBF;
+    margin: 50px auto 0 auto;
+    font-size: 5.625rem;    /*change 90px to percentage 90/16 = 5.625 *100 = 562.5%   16px = 100% = 1em = 1rem*/
+    font-family: 'Sacramento', cursive;
+}
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: #66BFBF;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+h3 {
+    color: #11999E;
+}
+
+hr {
+    width: 5%;
+    border-style: none;
+    border-top: 5px dotted #c7dbdb;
+    margin: 25px auto;
+
+}
+
+p {
+    line-height: 2;
+}
+
+.top-container {
+    background-color: #EAF6F6;
+    position: relative;
+    padding-top: 100px;
+}
+
+.middle-container {
+    margin: 100px 0;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 250px;
+    top: 40px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left:250px;
+    bottom: 300px;
+}
+
+.profile-pic {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.skill-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.left {
+    float: left;
+    margin-right: 30px;
+}
+
+.right {
+    float: right;
+    margin-left: 30px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 150px;
+    text-align: left;
+
+}
+
+.intro {
+    width: 30%;
+    margin: 15px auto;
+}
+
+.contact-message {
+    width: 40%;
+    margin: 25px auto;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #11999E;
+    color: #fff;
+    padding: 10px 12px;
+    display: inline-block;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+}
+
+.btn:hover {
+    background-color: #66BFBF;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 30px 0;
+}
+
+.footer-link {
+    text-decoration: none;
+    padding: 8px;
+    color: #11999E;
+    font-size: 1rem;
+    
+}
+
+.footer-link:hover {
+    color: #EAF6F6;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    margin-top: 30px;
+}
+

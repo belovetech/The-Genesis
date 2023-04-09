@@ -1,0 +1,151 @@
+/* GENERAL */
+body {
+  color: #999;
+  padding-top: 50px;
+}
+.navbar-style {
+  background-color: #00559d;
+}
+li > a {
+  color: #fff;
+}
+.navbar-brand {
+  color: #ffffff;
+  font-family: changa, sans-serif;
+  font-size: 2em;
+	font-weight: 800;
+}
+.navbar-brand:hover {
+  color: #eee;
+}
+.navbar-brand small {
+  font-family: 'open sans' sans-serif;
+  color: #ffcf00;
+}
+
+.navbar-toggle {
+  background: #0163b8;
+}
+.icon-bar {
+  background: white;
+}
+.navbar-nav > li > a{
+  transition: .25s;
+  -webkit-transition: .25s;
+  -moz-transition: .25s;
+  -ms-transition: .25s;
+  -o-transition: .25s;
+}
+.navbar-nav > li > a:hover  {
+  color: #00559d;
+  font-weight: 700;
+}
+.navbar-nav > li.active > a {
+  color: #00559d;
+  background: #eee;
+  font-weight: 700;
+}
+.caption > p {
+  color: #00559d;
+  text-align: center;
+}
+footer {
+  background-color: #00559d;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+
+}
+footer > a > img {
+  background: #ddd;
+  padding: 5px;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+}
+.list-unstyled > li > a {
+  color: #00559d;
+}
+.jumbotron {
+  background: #fff url(../img/136.jpg) no-repeat center;
+  background-size: cover;
+ }
+.jumbotron p {
+  color: black;
+}
+
+/* .jumbotron h1::after {
+  content: url(../img/logo.png) no-repeat 50px;
+  background-size: 60px 60px ;
+  position: relative;
+  left: 50%;
+
+} */
+/* GALLERY PAGES */
+.well h1,
+.jumbotron h1{
+  color: #00559d;
+}
+.well p {
+  color: black;
+}
+/* CONTACT PAGES */
+.contact-info a {
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px 0;
+}
+
+
+.contact-info li.phone a {
+	background-image: url('../img/call.png');
+}
+
+.contact-info li.mail a {
+	background-image: url("../img/mail.png");
+}
+
+.contact-info li.twitter a {
+	background-image: url(../img/twitter2.png);
+}
+
+/* FORM PAGES */
+.sign,
+h5 {
+  color: rgb(22, 22, 22);
+}
+h5:hover a {
+  text-decoration: none;
+}
+h5:hover a > strong,
+.fgt-password-text:hover a {
+  color:  red;
+}
+.login-brand {
+  font-family: changa, sans-serif;
+  font-size: 2.5em;
+	font-weight: 800;
+}
+.login-brand small {
+  font-family: 'open sans' sans-serif;
+}
+.login-brand:hover a {
+  text-decoration: none;
+}
+.fgt-password-text a,
+strong {
+  color: rgb(248, 52, 52);
+  font-family: monospace;
+} 
+
+/* Media quaries */
+@media screen and (min-width: 1200px) {
+  .container {
+    margin-bottom: 100px;
+  }
+}
